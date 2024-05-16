@@ -1,3 +1,4 @@
+import { anton } from "@/app/layout";
 import Image from "next/image";
 
 function FilterItem({
@@ -42,7 +43,9 @@ function Filter() {
   return (
     <section className="p-4 md:px-12">
       <div className="rounded-2xl bg-gray-200 ">
-        <h1 className="font-bold uppercase text-4xl text-center p-5">
+        <h1
+          className={`font-bold uppercase text-4xl text-center p-5 ${anton.className} tracking-wider`}
+        >
           Browse by Dress Style
         </h1>
         <div className="p-5 md:px-12">

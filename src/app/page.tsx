@@ -1,4 +1,5 @@
 import Brands from "@/components/brands";
+import NextBreadcrumb from "@/components/breadcrumb";
 import Cta from "@/components/cta";
 import Filter from "@/components/filter";
 import Footer from "@/components/footer";
@@ -38,16 +39,12 @@ export default function Home() {
   ];
   return (
     <main>
-      <Cta />
-      <Navbar />
       <Hero />
       <Brands />
       <ProductSection title="New Arrivals" items={items} />
       <ProductSection title="Top Selling" items={items} />
       <Filter />
       <Testimonials />
-      <NewsLetter />
-      <Footer />
     </main>
   );
 }

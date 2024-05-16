@@ -1,6 +1,7 @@
+import { anton } from "@/app/layout";
 import * as Icon from "react-feather";
 
-function TestimonialCard({
+export function TestimonialCard({
   name,
   rating,
   text,
@@ -29,7 +30,11 @@ function Testimonials() {
   return (
     <section className="px-4 mt-5 md:px-12">
       <div className="flex items-center py-2 mb-4 md:justify-between ">
-        <h1 className="font-bold text-4xl uppercase">Our Happy Customers</h1>
+        <h1
+          className={`font-bold text-4xl uppercase ${anton.className} tracking-wider`}
+        >
+          Our Happy Customers
+        </h1>
         <div className="flex ">
           <Icon.ArrowLeft size={30} className="text-gray-500" />
           <Icon.ArrowRight size={30} className="text-gray-500 " />

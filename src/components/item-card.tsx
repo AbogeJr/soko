@@ -13,10 +13,10 @@ function ItemCard({
   price: number;
 }>) {
   return (
-    <div className="max-h-[300px] md:max-h-[500px]  min-w-[200px] max-w-[200px] md:max-w-[400px]">
+    <div className="max-h-[300px] md:max-h-[500px]  min-w-[200px] max-w-[200px] md:max-w-[500px]">
       <Image
         src={image}
-        className="rounded-xl md:w-[300px] md:h-[300px]"
+        className="rounded-xl md:w-[500px] md:h-[300px]"
         width={200}
         height={200}
         alt="item"

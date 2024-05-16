@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Button from "./button";
+import { anton } from "@/app/layout";
 
 function Hero() {
   return (
     <section className=" bg-[#f2f0f1] flex flex-col px-4 md:px-12  pt-10 md:flex-row">
       <div className="md:w-1/2 flex flex-col md:justify-center">
-        <h1 className="text-5xl my-2 font-black md:text-7xl">
+        <h1
+          className={`text-5xl my-2 font-black md:text-7xl leading-snug tracking-wider ${anton.className}`}
+        >
           FIND CLOTHES THAT MATCH YOUR STYLE
         </h1>
         <p className="text-gray-500 my-2 text-sm md:text-base">
