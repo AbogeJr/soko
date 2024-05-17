@@ -59,17 +59,12 @@ function Navbar() {
         <div
           className={`${
             mobileMenu ? "block" : "hidden"
-          } md:hidden fixed top-0 p-5 left-0 w-full h-screen bg-gray-200 z-50`}
+          } md:hidden fixed top-0 p-6 left-0 w-full h-screen  bg-gray-200 z-50`}
         >
+          <h1 className={`${anton.className} text-5xl my-4 text-center`}>
+            SOKO.KE
+          </h1>
           <div className="flex items-center space-x-5">
-            <button
-              className="block"
-              onClick={() => {
-                setMobileMenu(!mobileMenu);
-              }}
-            >
-              <Icon.ArrowLeft size={20} />
-            </button>
             <div className="flex items-center bg-gray-300 p-2 px-4 rounded-3xl">
               <Icon.Search size={20} />
               <input
@@ -121,11 +116,21 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          <button
+            className="flex justify-center items-center w-full mt-5"
+            onClick={() => {
+              setMobileMenu(!mobileMenu);
+            }}
+          >
+            <Icon.ArrowLeft size={40} />
+          </button>
         </div>
 
         <div className="flex justify-center items-center space-x-2">
           <Icon.Search size={30} className="md:hidden" />
-          <Icon.ShoppingCart size={30} />
+          <Link href={"/cart"}>
+            <Icon.ShoppingCart size={30} />
+          </Link>
           <Icon.User size={30} />
         </div>
       </nav>

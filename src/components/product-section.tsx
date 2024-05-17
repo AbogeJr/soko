@@ -17,7 +17,7 @@ function ProductSection({
       >
         {title}
       </h1>
-      <div className="flex space-x-5 md:grid md:gap-x-2 overflow-x-auto  md:grid-cols-4">
+      <div className="flex space-x- md:grid md:gap-x-2 overflow-x-auto overflow-y-hidden  md:grid-cols-4">
         {items.map((item) => (
           <ItemCard
             key={item.name}

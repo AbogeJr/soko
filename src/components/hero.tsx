@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./button";
 import { anton } from "@/app/layout";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -16,9 +17,11 @@ function Hero() {
           designed to bring out your individuality and cater to your sense of
           style.
         </p>
-        <Button bg="bg-black mr-auto " text="text-white">
-          Shop Now
-        </Button>
+        <Link href="/casual">
+          <Button bg="bg-black mr-auto " text="text-white">
+            Shop Now
+          </Button>
+        </Link>
         <div className="flex  mt-5 flex-wrap justify-center md:justify-start space-x-5">
           <div className="flex items-center pr-5 flex-col border-r border-gray-300 flex-1/2 border-right">
             <span className="text-3xl ">200+</span>
